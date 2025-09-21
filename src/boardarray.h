@@ -13,12 +13,19 @@ class BoardArray : public Board {
             index = 0;
         }
 
+<<<<<<< HEAD
        void add(Entry* entry) {
     if (index < SIZE) {
         int i = index - 1;
         while (i >= 0 && array[i].score < entry->score) {
             array[i + 1] = array[i];
             i--;
+=======
+        void add(Entry* entry) {
+            // TODO: IMPLEMENT THIS FUNCTION
+            // ALGORITHM IS PROVIDED IN INSTRUCTIONS.TXT
+            return;
+>>>>>>> 8faef5761d96023510ba3a2e61bf4770615e7616
         }
         array[i + 1] = *entry;
         index++;
